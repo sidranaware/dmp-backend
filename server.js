@@ -6,7 +6,8 @@ const ABI = require("./abi.json");
 
 const app = express();
 app.use(cors({
-    origin: "https://dmp-viewer.vercel.app"
+    origin: ["http://localhost:5173", "https://dmp-viewer.vercel.app"],
+    methods: ["GET"]
   }));
 const provider = new JsonRpcProvider(process.env.RPC_URL);
 const contract = new Contract(process.env.CONTRACT_ADDRESS, ABI, provider);

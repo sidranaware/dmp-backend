@@ -1,0 +1,225 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "elementID",
+				"type": "uint256"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "elementType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "volume",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "origin",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "embodiedCarbon",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "lifespan",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "fireRating",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "installDate",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "manufacturer",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "recycledContent",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "weight",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "exchangeID",
+						"type": "string"
+					}
+				],
+				"internalType": "struct MaterialPassport.PassportInput",
+				"name": "input",
+				"type": "tuple"
+			}
+		],
+		"name": "createPassport",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "elementID",
+				"type": "uint256"
+			}
+		],
+		"name": "getPassport",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "passports",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "elementType",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "volume",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "origin",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "embodiedCarbon",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "lifespan",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "fireRating",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "installDate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "manufacturer",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "recycledContent",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "weight",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "exchangeID",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

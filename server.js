@@ -9,6 +9,7 @@ app.use(cors());
 const provider = new JsonRpcProvider(process.env.RPC_URL);
 const contract = new Contract(process.env.CONTRACT_ADDRESS, ABI, provider);
 
+
 app.get("/passport", async (req, res) => {
     const id = req.query.id;
     try {
@@ -33,4 +34,6 @@ app.get("/passport", async (req, res) => {
     }
 });
 
-app.listen(3000, () => console.log("✅ API Server running at http://localhost:3000"));
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`✅ Server running on port aaa ${PORT}`));

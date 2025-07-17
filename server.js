@@ -5,7 +5,9 @@ const { JsonRpcProvider, Contract } = require("ethers");
 const ABI = require("./abi.json");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: "https://dmp-viewer.vercel.app"
+  }));
 const provider = new JsonRpcProvider(process.env.RPC_URL);
 const contract = new Contract(process.env.CONTRACT_ADDRESS, ABI, provider);
 
